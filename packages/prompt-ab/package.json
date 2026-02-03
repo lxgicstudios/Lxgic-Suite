@@ -1,0 +1,37 @@
+{
+  "name": "prompt-ab",
+  "version": "1.0.0",
+  "description": "A/B test prompt variations",
+  "main": "dist/index.js",
+  "bin": {
+    "prompt-ab": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "prompt",
+    "ab-testing",
+    "experiment",
+    "ai",
+    "llm",
+    "testing",
+    "statistics"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^11.1.0",
+    "chalk": "^4.1.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "typescript": "^5.3.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

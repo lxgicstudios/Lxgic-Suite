@@ -1,0 +1,54 @@
+{
+  "name": "@lxgic/prompt-version",
+  "version": "1.0.0",
+  "description": "Git-like version control for prompts",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "prompt-version": "./dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rimraf dist",
+    "lint": "eslint src",
+    "test": "vitest run"
+  },
+  "keywords": [
+    "prompt",
+    "version",
+    "version-control",
+    "git",
+    "ai",
+    "claude",
+    "llm",
+    "history"
+  ],
+  "author": "Lxgic",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^12.0.0",
+    "conf": "^12.0.0",
+    "diff": "^5.2.0",
+    "ora": "^8.0.1",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/diff": "^5.0.9",
+    "@types/node": "^20.10.0",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.3.0",
+    "vitest": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

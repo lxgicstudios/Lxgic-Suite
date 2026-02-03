@@ -1,0 +1,36 @@
+{
+  "name": "token-estimate",
+  "version": "1.0.0",
+  "description": "Estimate cost before execution - calculate token counts and costs for AI models",
+  "main": "dist/index.js",
+  "bin": {
+    "token-estimate": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "token",
+    "estimate",
+    "cost",
+    "ai",
+    "claude",
+    "openai",
+    "pricing",
+    "llm"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^11.1.0",
+    "chalk": "^4.1.2",
+    "tiktoken": "^1.0.12"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "typescript": "^5.3.0"
+  }
+}

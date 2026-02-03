@@ -1,0 +1,38 @@
+{
+  "name": "ai-accuracy",
+  "version": "1.0.0",
+  "description": "Measure accuracy against labeled data",
+  "main": "dist/index.js",
+  "bin": {
+    "ai-accuracy": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "ai",
+    "accuracy",
+    "precision",
+    "recall",
+    "f1",
+    "metrics",
+    "evaluation",
+    "confusion-matrix"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^11.1.0",
+    "chalk": "^4.1.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "typescript": "^5.3.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

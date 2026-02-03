@@ -1,0 +1,42 @@
+{
+  "name": "@lxgic/ai-budget",
+  "version": "1.0.0",
+  "description": "Set and track AI spending limits with alerts and usage history",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "ai-budget": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/index.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "ai",
+    "budget",
+    "spending",
+    "limits",
+    "tracking",
+    "cost-management",
+    "claude",
+    "openai"
+  ],
+  "author": "Lxgic",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^11.1.0",
+    "chalk": "^4.1.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "typescript": "^5.3.2"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "files": [
+    "dist"
+  ]
+}

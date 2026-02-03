@@ -1,0 +1,42 @@
+{
+  "name": "@lxgic/token-count",
+  "version": "1.0.0",
+  "description": "Count tokens for any text/prompt with accurate estimation for Claude and other AI models",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "token-count": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/index.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "tokens",
+    "token-count",
+    "claude",
+    "ai",
+    "llm",
+    "tokenizer",
+    "prompt"
+  ],
+  "author": "Lxgic",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^11.1.0",
+    "chalk": "^4.1.2",
+    "gpt-tokenizer": "^2.1.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "typescript": "^5.3.2"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "files": [
+    "dist"
+  ]
+}

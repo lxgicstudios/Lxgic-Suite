@@ -1,0 +1,1 @@
+Please help me to write a function that will be able to calculate the sum of all the numbers in a list. I would really appreciate it if you could also add comments to explain what each part of the code does. Thank you very much for your help!

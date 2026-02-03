@@ -1,0 +1,41 @@
+{
+  "name": "@lxgic/prompt-policy",
+  "version": "1.0.0",
+  "description": "Enforce organizational prompt policies",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "prompt-policy": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/index.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "prompt",
+    "policy",
+    "governance",
+    "compliance",
+    "validation",
+    "ai"
+  ],
+  "author": "Lxgic",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^11.1.0",
+    "chalk": "^4.1.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "typescript": "^5.3.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ]
+}
